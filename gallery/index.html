@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caravan Glass and Window Completed Jobs</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#f0c8c0;font-family:'Helvetica Neue',Arial,sans-serif;}
+.page{max-width:1010px;margin:0 auto;background:#2aacbf;border-left:8px solid #e07060;border-right:8px solid #e07060;}
+.header{background:#00b5cc;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;}
+.header-title{color:#fff;font-size:34px;font-weight:bold;}
+.header-phone{color:#fff;font-size:26px;font-weight:bold;}
+.nav{background:#2d5fa0;display:flex;}
+.nav a{color:#fff;text-decoration:none;padding:12px 15px;}
+.hero{width:100%;display:block;}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:20px 30px;}
+.gallery-grid img{width:100%;height:100px;object-fit:cover;display:block;}
+.lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;align-items:center;justify-content:center;}
+.lightbox.active{display:flex;}
+.lightbox img{max-width:90%;max-height:90vh;}
+.lightbox-close{position:absolute;top:20px;right:30px;color:#fff;font-size:40px;cursor:pointer;}
+.content{padding:20px 30px;color:#fff;}
+.footer{background:#1a8fa0;color:#ddf;text-align:center;padding:14px;font-size:13px;}
+</style></head>
+<body><div class="page"><header class="header"><div class="header-title">Caravan Glass Replacement</div><div class="header-phone">&#128222; 0800 757 985</div></header><nav class="nav"><a href="../">Home</a><a href="../contact_us/">Contact Us</a><a href="../gallery/">Gallery</a></nav><img src="https://caravanglass.co.nz/images/Vintage style caravan.jpg" alt="caravan" class="hero"><div class="content"><h2>Sample of our work</h2></div><div class="gallery-grid"><a href="javascript:void(0)" onclick="openLB('https://caravanglass.co.nz/images/front.jpg')"><img src="https://caravanglass.co.nz/images/tn_front.png" alt="job 1"></a><a href="javascript:void(0)" onclick="openLB('https://caravanglass.co.nz/images/front2.jpg')"><img src="https://caravanglass.co.nz/images/tn_front2.png" alt="job 2"></a><a href="javascript:void(0)" onclick="openLB('https://caravanglass.co.nz/images/rear1.jpg')"><img src="https://caravanglass.co.nz/images/tn_rear1.png" alt="job 3"></a></div><div class="lightbox" id="lb" onclick="this.classList.remove('active')"><span class="lightbox-close">&times;</span><img id="lb-img" src="" alt=""></div><script>function openLB(src){document.getElementById('lb-img').src=src;document.getElementById('lb').classList.add('active');}</script><footer class="footer">Copyright &copy; 2016-2026, Caravan Glass Replacement.</footer></div></body></html>
